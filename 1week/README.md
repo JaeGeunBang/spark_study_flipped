@@ -10,5 +10,9 @@
   - Scala 
 
 
-
 스파크 RDD 논문 LINK: https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/zaharia
+
+docker로 jupyter 셋팅
+```
+docker run -it --rm -p 8888:8888 jupyter/all-spark-notebook
+```
