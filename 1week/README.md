@@ -16,3 +16,9 @@ docker로 jupyter 셋팅
 ```
 docker run -it --rm -p 8888:8888 jupyter/all-spark-notebook
 ```
+
+docker container 확인 및 접속
+```
+docker ps -a
+docker exec -it <continar id> /bin/bash
+```
