@@ -14,14 +14,27 @@
 
 docker로 jupyter 셋팅
 ```
-docker run -it --rm -p 8888:8888 jupyter/all-spark-notebook
+// 기본 실행
+sudo docker run -it --rm -p 8888:8888 jupyter/all-spark-notebook
 
 // docker 데이터 볼륨 공유
-docker run -it --rm -v /Users/bangjaegeun/work/git/spark_study_flipped:/home/jovyan/spark_study_flipped -p 8888:8888 jupyter/all-spark-notebook
+sudo docker run -it 
+    -v /Users/bangjaegeun/work/git/spark_study_flipped:/home/jovyan/work/spark_study_flipped 
+    -p 8888:8888 
+    --name spark_study_fliped 
+    jupyter/all-spark-notebook
 ```
 
-docker container 확인 및 접속
+docker 컨테이너 실행
 ```
-docker ps -a
-docker exec -it <continar id> /bin/bash
+sudo docker start spark_study_fliped
 ```
+
+docker container 확인 및 bash 접속
+```
+sudo docker ps -a
+sudo docker exec -it <continar id> /bin/bash
+```
+
+
+
