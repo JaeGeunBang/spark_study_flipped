@@ -4,4 +4,8 @@ https://www.notion.so/Hive-Bucketing-in-Apache-Spark-Tejas-Patil-9374879e0ca744c
 
 
 Parquet vs ORC vs ORC with Snappy
-https://slack-redir.net/link?url=https%3A%2F%2Fstackoverflow.com%2Fa%2F43805761
+https://stackoverflow.com/questions/32373460/parquet-vs-orc-vs-orc-with-snappy/43805761#43805761
+
+
+Hudi: Uber Engineering’s Incremental Processing Framework on Apache Hadoop
+https://eng.uber.com/hoodie/
